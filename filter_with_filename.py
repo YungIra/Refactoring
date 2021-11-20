@@ -30,16 +30,16 @@ def get_mosaic():
 
 
 print('Введите имя исходного изображения')
-img = Image.open(input())
+img = Image.open('img2.jpg')
 matrix = np.array(img)
 x = len(matrix)
 y = len(matrix[1])
 print('Введите имя нового изображения')
-newImg = input()
+newImg = 'res.jpg'
 print('Введите высоту мозайки')
-sizeX = int(input())
+sizeX = 10
 print('Введите ширину мозайки')
-sizeY = int(input())
+sizeY = 10
 print('Введите количество градаций серого')
-gradation = int(input())
+gradation = 50
 get_mosaic()
